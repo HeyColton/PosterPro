@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <RelativeLayout
+        android:id="@+id/feedbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/feedtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="24dp"
+            android:fontFamily="@font/arizonia"
+            android:text="Poster Pro"
+            android:textColor="#040404"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0" />
+
+
+        <ImageButton
+            android:id="@+id/feedlog"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginStart="310dp"
+            android:layout_marginLeft="280dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#00FFFFFF"
+            android:scaleX="1.3"
+            android:scaleY="1.3"
+            android:src="@mipmap/ic_signin_foreground"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="100" />
+
+        <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="100dp"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="83dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:src="@mipmap/ic_list" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="center_horizontal"
+        android:layout_height="match_parent"
+        android:text="Event Fair List"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"></TextView>
+
+
+</LinearLayout>
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="150dp" />
+
+    <ImageButton
+        android:id="@+id/feedpost"
+        android:layout_width="70dp"
+        android:layout_height="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="220dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:background="#00FFFFFF"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="80dp"
+        android:scaleX="3"
+        android:scaleY="3"
+        android:src="@mipmap/ic_postyourevent_foreground" />
+
+    <ImageButton
+        android:id="@+id/feedscan"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="50dp"
+        android:background="#00FFFFFF"
+        android:src="@mipmap/ic_scan_foreground" />
+
+</RelativeLayout>
